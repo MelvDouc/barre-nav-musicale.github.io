@@ -77,3 +77,13 @@ a {
     font-size: 1.2em;
     padding: .2em;
 }
+
+.fond-rouge {
+    padding: .2em;
+    animation: intro 4s linear forwards;
+}
+@keyframes intro {
+    0% {color: #fff; background-color: red; box-shadow: 5px 5px 5px orange;}
+    50% {color: #000; background-color: yellow; box-shadow: 5px 5px 5px green;}
+    100% {color: #fff; background-color: red; box-shadow: 5px 5px 5px blue;}
+}
