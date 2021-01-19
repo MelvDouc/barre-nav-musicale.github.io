@@ -1,38 +1,79 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 nav {
-    background-color: limegreen;
-    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    background-image: url('./piano-keyboard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 ul {
-    width: 66.66%;
+    margin: 0;
     padding: 0;
+    width: 50%;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
-ul > li {
-    display: block;
-    width: 50px;
-    height: 35px;
-    line-height: 35px;
+li {
     text-align: center;
+    line-height: 35px;
+    width: 100%;
 }
 
-ul > li:hover {
-    background-color: darkgreen;
+label {
+    font-weight: bold;
 }
 
-ul > li > a {
+div.label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.5em auto;
+}
+
+li:first-of-type:hover {
+    background-color: red;
+}
+
+li:nth-of-type(2):hover {
+    background-color: orange;
+}
+
+li:nth-of-type(3):hover {
+    background-color: yellow;
+}
+
+li:nth-of-type(4):hover {
+    background-color: green;
+}
+
+li:nth-of-type(5):hover {
+    background-color: blue;
+}
+
+li:nth-of-type(6):hover {
+    background-color: indigo;
+}
+
+li:nth-of-type(7):hover {
+    background-color: violet;
+}
+
+li:nth-of-type(3):hover a {
+    color: #000;
+}
+
+li:hover a {
+    background-color: initial;
+    color: #fff;
+}
+
+a {
+    color: yellow;
+    background-color: blue;
     text-decoration: none;
-    color: white;
-}
-
-#label-input {
-    margin: 1.25em auto;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: .2em;
 }

@@ -1,83 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./main.js" async></script>
-    <title>Navbar musicale</title>
-</head>
-<body>
 
-    <h1>Navbar musicale</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" async></script>
+        <title>Navbar musicale</title>
+    </head>
 
-    <div id="mes-audios">
-        <audio>
-            <source src="./audio/MIDI/c4.mid" type="audio/midi">
-            <source src="./audio/MP3/c4.mp3" type="type/mpeg">
-        </audio>
-        <audio>
-            <source src="./audio/MIDI/d4.mid" type="audio/midi">
-            <source src="./audio/MP3/d4.mp3" type="type/mpeg">
-        </audio>
-        <audio>
-            <source src="./audio/MIDI/e4.mid" type="audio/midi">
-            <source src="./audio/MP3/e4.mp3" type="type/mpeg">
-        </audio>
-        <audio>
-            <source src="./audio/MIDI/f4.mid" type="audio/midi">
-            <source src="./audio/MP3/f4.mp3" type="type/mpeg">
-        </audio>
-        <audio>
-            <source src="./audio/MIDI/g4.mid" type="audio/midi">
-            <source src="./audio/MP3/g4.mp3" type="type/mpeg">
-        </audio>
-        <audio>
-            <source src="./audio/MIDI/a4.mid" type="audio/midi">
-            <source src="./audio/MP3/a4.mp3" type="type/mpeg">
-        </audio>
-        <audio>
-            <source src="./audio/MIDI/b4.mid" type="audio/midi">
-            <source src="./audio/MP3/b4.mp3" type="type/mpeg">
-        </audio>
-    </div>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">Do</a>
-            </li>
-            
-            <li>
-                <a href="#">Ré</a>
-            </li>
-            
-            <li>
-                <a href="#">Mi</a>
-            </li>
-            
-            <li>
-                <a href="#">Fa</a>
-            </li>
-            
-            <li>
-                <a href="#">Sol</a>
-            </li>
-            
-            <li>
-                <a href="#">La</a>
-            </li>
-            
-            <li>
-                <a href="#">Si</a>
-            </li>
-        </ul>
-    </nav>
+    <body>
 
-    <div id="label-input">
-        <label for="checkbox"><span style="color:red">&#9888;</span> Cochez cette checkbox.</label>
-        <input type="checkbox" id="checkbox" name="checkbox">
-    </div>
+        <div id="mes-audios">
+            <audio id="c4">
+                <source src="./audio/MIDI/c4.mid" type="audio/midi">
+                <source src="./audio/MP3/c4.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="d4">
+                <source src="./audio/MIDI/d4.mid" type="audio/midi">
+                <source src="./audio/MP3/d4.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="e4">
+                <source src="./audio/MIDI/e4.mid" type="audio/midi">
+                <source src="./audio/MP3/e4.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="f4">
+                <source src="./audio/MIDI/f4.mid" type="audio/midi">
+                <source src="./audio/MP3/f4.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="g4">
+                <source src="./audio/MIDI/g4.mid" type="audio/midi">
+                <source src="./audio/MP3/g4.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="a4">
+                <source src="./audio/MIDI/a4.mid" type="audio/midi">
+                <source src="./audio/MP3/a4.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="b4">
+                <source src="./audio/MIDI/b4.mid" type="audio/midi">
+                <source src="./audio/MP3/b4.mp3" type="audio/mpeg">
+            </audio>
+        </div>
 
-</body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Do</a>
+                </li>
+                <li>
+                    <a href="#">Ré</a>
+                </li>
+                <li>
+                    <a href="#">Mi</a>
+                </li>
+                <li>
+                    <a href="#">Fa</a>
+                </li>
+                <li><a href="#">Sol</a></li>
+                <li><a href="#">La</a></li>
+                <li><a href="#">Si</a></li>
+            </ul>
+        </nav>
+
+        <div class="label">
+            <input id="checkbox" type="checkbox">
+            <label for="checkbox"><span style="background:red;padding:.33em;color:#333">Cochez cette checkbox.</span> (Il faut d'abord interagir avec le DOM pour que la méthode <i>play()</i> peut être utilisée.</label>
+        </div>
+        
+    </body>
+
 </html>
