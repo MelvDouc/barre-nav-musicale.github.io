@@ -38,3 +38,25 @@ for(i = 0; i < fichiersAudio.length; i++){
         fichiersAudio[i].play();
     }
 }*/
+
+////
+
+const elementsLi = document.getElementsByTagName('li');
+const arcEnCiel = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+for(let i = 0; i < elementsLi.length; i++){
+    elementsLi[i].addEventListener('mouseover', function() {
+        // this.style.backgroundImage = 'initial';
+        this.style.webkitBackgroundClip = 'initial';
+        this.style.backgroundColor = arcEnCiel[i];
+        if(this.style.backgroundColor == 'yellow'){
+            this.children[0].style.webkitTextFillColor = '#000';
+        } else {this.children[0].style.webkitTextFillColor = '#fff'}
+    });
+    elementsLi[i].addEventListener('mouseout', function() {
+        // this.style.backgroundImage = 'initial';
+        this.style.webkitBackgroundClip = 'text';
+        this.style.backgroundColor = 'initial';
+        this.children[0].style.webkitTextFillColor = 'transparent'
+    });
+};

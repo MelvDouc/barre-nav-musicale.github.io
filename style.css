@@ -4,6 +4,7 @@ nav {
     background-image: url('./piano-keyboard.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-background-clip: text;
 }
 
 ul {
@@ -18,8 +19,8 @@ ul {
 
 li {
     text-align: center;
-    line-height: 35px;
     width: 100%;
+    padding: .88em;
 }
 
 label {
@@ -31,7 +32,7 @@ div.label {
     margin: 1.5em auto;
 }
 
-li:first-of-type:hover {
+/*li:first-of-type:hover {
     background-color: red;
 }
 
@@ -57,25 +58,15 @@ li:nth-of-type(6):hover {
 
 li:nth-of-type(7):hover {
     background-color: violet;
-}
-
-li:nth-of-type(3):hover a {
-    color: #000;
-}
-
-li:hover a {
-    background-color: initial;
-    color: #fff;
-}
+}*/
 
 a {
-    color: yellow;
-    background-color: blue;
     text-decoration: none;
     font-family: Verdana;
     font-weight: bold;
     font-size: 1.2em;
-    padding: .2em;
+    cursor: default;
+    -webkit-text-fill-color: transparent;
 }
 
 .fond-rouge {
