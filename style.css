@@ -39,6 +39,7 @@ li {
     text-align: center;
     width: 100%;
     padding: .88em;
+    transform: none;
 }
 
 li:hover {
