@@ -12,9 +12,10 @@ body {
 }
 
 #div-nav {
+    min-width: 300px;
 	position: relative;
 	z-index: 1;
-	background-color: #fff;
+    background-color: #fff;
 }
 
 nav {
@@ -74,4 +75,24 @@ a {
     0% {color: #fff; background-color: red; box-shadow: 5px 5px 10px orange;}
     50% {color: #000; background-color: yellow; box-shadow: 5px 5px 15px green;}
     100% {color: #fff; background-color: red; box-shadow: 5px 5px 5px blue;}
+}
+
+/*  */
+
+@media only screen and (max-width: 768px) {
+    li {
+        padding: .33em;
+    }
+    a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    li {
+        padding: .1em;
+    }
+    a {
+        font-size: .75em;
+    }
 }
